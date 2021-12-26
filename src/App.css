@@ -45,11 +45,11 @@ a:hover {
 }
 
 .about-name {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .about-description {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .hero {
@@ -97,14 +97,18 @@ a:hover {
 .counter-box {
   background-color: var(--white);
   color: black;
-  width: 22%;
-  margin-right: 10px;
+  width: 23%;
+  margin-right: 5px;
   padding: 10px 10px;
   border-radius: 10px
 }
 
 .place-container {
   max-height: 50vh;
+}
+
+.timer-desc {
+  font-size: 0.8em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -124,6 +128,10 @@ a:hover {
     margin-left: 10px;
     margin-right: 10px;
     width: 10%;
+  }
+
+  .timer-desc {
+    font-size: 1em;
   }
 
   /* .about-container {

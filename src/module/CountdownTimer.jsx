@@ -29,19 +29,19 @@ function CountdownTimer() {
         <Row className="justify-content-center py-3">
           <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
             <h3 className="fw-bold">{days}</h3>
-            <span className="fw-bold">Days</span>
+            <span className="fw-bold timer-desc">Days</span>
           </Col>
           <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
             <h3>{hours}</h3>
-            <span className="fw-bold">Hours</span>
+            <span className="fw-bold timer-desc">Hours</span>
           </Col>
           <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
             <h3>{minutes}</h3>
-            <span className="fw-bold">Minutes</span>
+            <span className="fw-bold timer-desc">Minutes</span>
           </Col>
           <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
             <h3>{seconds}</h3>
-            <span className="fw-bold">Seconds</span>
+            <span className="fw-bold timer-desc">Seconds</span>
           </Col>
         </Row>
       </Container>

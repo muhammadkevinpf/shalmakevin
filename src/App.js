@@ -12,11 +12,12 @@ import Timeline from './module/Timeline';
 import { song } from './assets';
 
 function App() {
-
   useEffect(() => {
     const audioElement = new Audio(song);
-    audioElement.play();
-  }, [])
+    window.addEventListener("click" , () => {
+      audioElement.play();
+    })
+  }, []);
 
   return (
     <div className="wrapper">
