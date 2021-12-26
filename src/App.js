@@ -10,19 +10,20 @@ import Footer from './module/Footer';
 import Hero from './module/Hero';
 import Timeline from './module/Timeline';
 import { song } from './assets';
+import ReactAudioPlayer from 'react-audio-player';
 
 function App() {
-  useEffect(() => {
-    const audioElement = new Audio(song);
-    window.onload = function(){
-      document.getElementById('hero').click();
-    }
+  // useEffect(() => {
+  //   const audioElement = new Audio(song);
+  //   window.onload = function(){
+  //     document.getElementById('hero').click();
+  //   }
 
-    window.addEventListener("click", () => {
-      audioElement.play();
-    })
+  //   window.addEventListener("click", () => {
+  //     audioElement.play();
+  //   })
     
-  }, []);
+  // }, []);
 
   return (
     <div className="wrapper">
@@ -34,6 +35,7 @@ function App() {
       <Place />
       <GuestBook />
       <Footer />
+      <ReactAudioPlayer src={song} autoPlay/>
     </div>
   );
 }
