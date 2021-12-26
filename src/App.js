@@ -10,7 +10,7 @@ import Footer from './module/Footer';
 import Hero from './module/Hero';
 import Timeline from './module/Timeline';
 import { song } from './assets';
-import ReactAudioPlayer from 'react-audio-player';
+import ReactHowler from 'react-howler'
 
 function App() {
   // useEffect(() => {
@@ -35,7 +35,7 @@ function App() {
       <Place />
       <GuestBook />
       <Footer />
-      <ReactAudioPlayer src={song} autoPlay/>
+      <ReactHowler src={song} playing={true}/>
     </div>
   );
 }
