@@ -18,6 +18,10 @@ function App() {
     //   audioElement.play();
     // })
 
+    window.addEventListener("touchmove", () => {
+      audioElement.play();
+    })
+
     window.addEventListener("scroll", () => {
       audioElement.play();
     })
