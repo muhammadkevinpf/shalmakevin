@@ -14,14 +14,14 @@ import { song } from './assets';
 function App() {
   useEffect(() => {
     const audioElement = new Audio(song);
+    window.onload = function(){
+      document.getElementById('hero').click();
+    }
 
-    window.addEventListener("touchend", () => {
+    window.addEventListener("click", () => {
       audioElement.play();
     })
-
-    window.addEventListener("scroll", () => {
-      audioElement.play();
-    })
+    
   }, []);
 
   return (
