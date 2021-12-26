@@ -10,21 +10,10 @@ import Footer from './module/Footer';
 import Hero from './module/Hero';
 import Timeline from './module/Timeline';
 import { song } from './assets';
-import ReactHowler from 'react-howler'
+import ReactHowler from 'react-howler';
+import Modals from './components/Modals';
 
 function App() {
-  // useEffect(() => {
-  //   const audioElement = new Audio(song);
-  //   window.onload = function(){
-  //     document.getElementById('hero').click();
-  //   }
-
-  //   window.addEventListener("click", () => {
-  //     audioElement.play();
-  //   })
-    
-  // }, []);
-
   return (
     <div className="wrapper">
       {/* <Navigation /> */}
@@ -35,7 +24,8 @@ function App() {
       <Place />
       <GuestBook />
       <Footer />
-      <ReactHowler src={song} playing={true}/>
+      <Modals />
+      <ReactHowler src={song} playing={true} />
     </div>
   );
 }

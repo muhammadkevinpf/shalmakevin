@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Readex+Pro&display=swap');
 
 :root {
-  --white: #FEFFED;
+  --white: #feffed;
   --cream: #e6af53;
 }
 
@@ -36,7 +36,6 @@ a:hover {
 
 .bgcolor-cream {
   background-color: var(--cream);
-
 }
 
 .about-container {
@@ -100,7 +99,7 @@ a:hover {
   width: 23%;
   margin-right: 5px;
   padding: 10px 10px;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .place-container {
@@ -111,6 +110,15 @@ a:hover {
   font-size: 0.8em;
 }
 
+.modal-body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/image/test.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(0);
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     height: 100vh;
@@ -119,11 +127,11 @@ a:hover {
   .paragraph-headline {
     font-size: 2em;
   }
-  
+
   .main-headline {
     font-size: 5em;
   }
-  
+
   .counter-box {
     margin-left: 10px;
     margin-right: 10px;
