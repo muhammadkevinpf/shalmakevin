@@ -18,7 +18,7 @@ function App() {
     //   audioElement.play();
     // })
 
-    window.addEventListener("wheel", () => {
+    window.addEventListener("scroll", () => {
       audioElement.play();
     })
   }, []);
