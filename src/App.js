@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navigation from './module/Nav';
@@ -8,8 +9,15 @@ import GuestBook from './module/GuestBook';
 import Footer from './module/Footer';
 import Hero from './module/Hero';
 import Timeline from './module/Timeline';
+import { song } from './assets';
 
 function App() {
+
+  useEffect(() => {
+    const audioElement = new Audio(song);
+    audioElement.play();
+  }, [])
+
   return (
     <div className="wrapper">
       {/* <Navigation /> */}

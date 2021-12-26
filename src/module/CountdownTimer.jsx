@@ -20,26 +20,31 @@ function CountdownTimer() {
   }, 1000);
 
   return (
-    <Container className="text-center font-playfair">
-      <h2 >Time Left Until Event</h2>
-      <Row className="justify-content-center my-5 py-3">
-        <Col xs="3" md="2" >
-          <h3 >{days}</h3>
-          <span className="fw-bold">Days</span>
-        </Col>
-        <Col xs="3" md="2">
-          <h3>{hours}</h3>
-          <span className="fw-bold">Hours</span>
-        </Col>
-        <Col xs="3" md="2">
-          <h3>{minutes}</h3>
-          <span className="fw-bold">Minutes</span>
-        </Col>
-        <Col xs="3" md="2">
-          <h3>{seconds}</h3>
-          <span className="fw-bold">Seconds</span>
-        </Col>
-      </Row>
+    <Container
+      className="text-center font-playfair bgcolor-cream p-4 mb-5"
+      fluid
+    >
+      <Container>
+        <h2 className="my-3 fw-bold">Time Left Until Event</h2>
+        <Row className="justify-content-center py-3">
+          <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
+            <h3 className="fw-bold">{days}</h3>
+            <span className="fw-bold">Days</span>
+          </Col>
+          <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
+            <h3>{hours}</h3>
+            <span className="fw-bold">Hours</span>
+          </Col>
+          <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
+            <h3>{minutes}</h3>
+            <span className="fw-bold">Minutes</span>
+          </Col>
+          <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
+            <h3>{seconds}</h3>
+            <span className="fw-bold">Seconds</span>
+          </Col>
+        </Row>
+      </Container>
     </Container>
   );
 }

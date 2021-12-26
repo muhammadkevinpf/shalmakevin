@@ -8,7 +8,7 @@ function Hero() {
         The Wedding of
       </p>
       <h1 className="font-dancing text-white main-headline">
-        Shalma <span className="text-warning">&</span> Kevin
+        Shalma <span className="color-cream">&</span> Kevin
       </h1>
     </div>
   );

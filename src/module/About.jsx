@@ -15,8 +15,8 @@ function About() {
         <span className="font-dancing fs-4"> -Dave Meurer </span>
       </p>
       <Row className="justify-content-md-evenly">
-        <Col md="4" className="mb-4">
-          <img src={cewe} alt="cewe" className="rounded w-100" />
+        <Col md="4">
+          <img src={cewe} alt="shalma" className="photo-about" />
           <div className="mt-2 text-center">
             <h3 className="font-dancing about-name">Shalma Ayu Shafira</h3>
             <p className="font-playfair about-description">
@@ -25,8 +25,8 @@ function About() {
             </p>
           </div>
         </Col>
-        <Col md="4" className="mb-4">
-          <img src={cowo} alt="cowo" className="rounded w-100" />
+        <Col md="4">
+          <img src={cowo} alt="cowo" className="photo-about" />
           <div className="mt-2 text-center">
             <h3 className="font-dancing about-name">Muhammad Kevin</h3>
             <p className="font-playfair about-description">
