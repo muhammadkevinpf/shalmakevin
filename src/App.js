@@ -14,7 +14,11 @@ import { song } from './assets';
 function App() {
   useEffect(() => {
     const audioElement = new Audio(song);
-    window.addEventListener("click" , () => {
+    // window.addEventListener("click" , () => {
+    //   audioElement.play();
+    // })
+
+    window.addEventListener("wheel", () => {
       audioElement.play();
     })
   }, []);
