@@ -13,18 +13,22 @@ import { song } from './assets';
 
 function App() {
   useEffect(() => {
-    const audioElement = new Audio(song);
-    // window.addEventListener("click" , () => {
-    //   audioElement.play();
-    // })
-
-    window.addEventListener("touchmove", () => {
-      audioElement.play();
-    })
-
-    window.addEventListener("scroll", () => {
-      audioElement.play();
-    })
+    window.addEventListener('load', function () {
+      var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      var source = audioCtx.createBufferSource();
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', song);
+      xhr.responseType = 'arraybuffer';
+      xhr.addEventListener('load', function (r) {
+        audioCtx.decodeAudioData(xhr.response, function (buffer) {
+          source.buffer = buffer;
+          source.connect(audioCtx.destination);
+          source.loop = false;
+        });
+        source.start(0);
+      });
+      xhr.send();
+    });
   }, []);
 
   return (
