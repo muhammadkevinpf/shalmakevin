@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navigation from './module/Nav';
@@ -12,6 +11,7 @@ import Timeline from './module/Timeline';
 import { song } from './assets';
 import ReactHowler from 'react-howler';
 import Modals from './components/Modals';
+import Galeri from './module/Galeri';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       {/* <Navigation /> */}
       <Hero />
       <About />
+      <Galeri />
       <Timeline />
       <CountdownTimer />
       <Place />

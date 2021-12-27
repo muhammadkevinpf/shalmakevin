@@ -10,7 +10,7 @@ import { first_date, engagement, wedding } from '../assets'
 
 function Timeline() {
   return (
-    <Container className="mb-5">
+    <Container className="my-5">
       <h2 className="font-playfair text-center">Our Story</h2>
       <VerticalTimeline>
         <VerticalTimelineElement

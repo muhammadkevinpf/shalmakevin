@@ -3,6 +3,7 @@
 :root {
   --white: #feffed;
   --cream: #e6af53;
+  --gray: #a6a6a6;
 }
 
 a {
@@ -119,6 +120,22 @@ a:hover {
   transform: translateY(0);
 }
 
+.modal-box {
+  padding: 2em 4em;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.button-gray {
+  color: var(--white);
+  background-color: var(--gray);
+}
+
+.react-photo-gallery--gallery > div > img {
+  border-radius: 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     height: 100vh;
@@ -140,6 +157,10 @@ a:hover {
 
   .timer-desc {
     font-size: 1em;
+  }
+
+  .modal-box {
+    padding: 2em 6em;
   }
 
   /* .about-container {
