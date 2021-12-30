@@ -5,6 +5,7 @@ import reception from './image/reception.jpg';
 import first_date from './image/first_date.jpeg';
 import engagement from './image/engagement.jpeg';
 import wedding from './image/wedding.jpeg';
+import thanks from './image/thanks.svg';
 
 import gallery1 from './image/gallery/gallery (1).JPG';
 import gallery2 from './image/gallery/gallery (2).JPG';
@@ -38,4 +39,5 @@ export {
   gallery8,
   gallery9,
   gallery10,
+  thanks
 };

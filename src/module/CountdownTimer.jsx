@@ -28,7 +28,7 @@ function CountdownTimer() {
         <h2 className="my-3 fw-bold">Time Left Until Event</h2>
         <Row className="justify-content-center py-3">
           <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">
-            <h3 className="fw-bold">{days}</h3>
+            <h3>{days}</h3>
             <span className="fw-bold timer-desc">Days</span>
           </Col>
           <Col xs="3" md={{span: 2, offset: 1}} className="counter-box">

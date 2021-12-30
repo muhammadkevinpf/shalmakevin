@@ -111,7 +111,7 @@ a:hover {
   font-size: 0.8em;
 }
 
-.modal-body {
+.modal-background {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(./assets/image/test.JPG);
   background-size: cover;
@@ -124,7 +124,7 @@ a:hover {
   padding: 2em 4em;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .button-gray {
@@ -134,6 +134,21 @@ a:hover {
 
 .react-photo-gallery--gallery > div > img {
   border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./assets/image/floral-bg.jpg) center center / cover no-repeat;
+}
+
+.modal-form {
+  width: 100%;
+  padding: 2em 1em;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--white);
 }
 
 @media only screen and (min-width: 768px) {
@@ -161,6 +176,11 @@ a:hover {
 
   .modal-box {
     padding: 2em 6em;
+  }
+
+  .modal-form {
+    width: 60%;
+    padding: 2em;
   }
 
   /* .about-container {

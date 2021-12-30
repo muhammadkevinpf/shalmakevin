@@ -5,7 +5,7 @@ function Modals() {
   const [show, setShow] = useState(true);
   return (
     <Modal show={show} fullscreen={true}>
-      <Modal.Body className="d-flex text-center justify-content-center flex-column align-items-center modal-body">
+      <Modal.Body className="d-flex text-center justify-content-center flex-column align-items-center modal-background">
         <div className="modal-box">
           <h3 className="font-playfair mb-4">THE WEDDING</h3>
           <h1 className="font-dancing mb-4" style={{ fontSize: '4em' }}>
