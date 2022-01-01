@@ -151,6 +151,15 @@ a:hover {
   color: var(--white);
 }
 
+.page-link {
+  color: #6c757d;
+}
+
+.page-item.active .page-link {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     height: 100vh;
