@@ -1,5 +1,5 @@
-import cewe from './image/shalma.JPG';
-import cowo from './image/kevin.JPG';
+import cewe from './image/shalma.jpg';
+import cowo from './image/kevin.jpg';
 import ceremony from './image/ceremony.jpg';
 import reception from './image/reception.jpg';
 import first_date from './image/first_date.jpeg';
@@ -7,16 +7,16 @@ import engagement from './image/engagement.jpeg';
 import wedding from './image/wedding.jpeg';
 import thanks from './image/thanks.svg';
 
-import gallery1 from './image/gallery/gallery (1).JPG';
-import gallery2 from './image/gallery/gallery (2).JPG';
-import gallery3 from './image/gallery/gallery (3).JPG';
-import gallery4 from './image/gallery/gallery (4).JPG';
-import gallery5 from './image/gallery/gallery (5).JPG';
-import gallery6 from './image/gallery/gallery (6).JPG';
-import gallery7 from './image/gallery/gallery (7).JPG';
-import gallery8 from './image/gallery/gallery (8).JPG';
-import gallery9 from './image/gallery/gallery (9).JPG';
-import gallery10 from './image/gallery/gallery (10).JPG';
+import gallery1 from './image/gallery/gallery (1).jpg';
+import gallery2 from './image/gallery/gallery (2).jpg';
+import gallery3 from './image/gallery/gallery (3).jpg';
+import gallery4 from './image/gallery/gallery (4).jpg';
+import gallery5 from './image/gallery/gallery (5).jpg';
+import gallery6 from './image/gallery/gallery (6).jpg';
+import gallery7 from './image/gallery/gallery (7).jpg';
+import gallery8 from './image/gallery/gallery (8).jpg';
+import gallery9 from './image/gallery/gallery (9).jpg';
+import gallery10 from './image/gallery/gallery (10).jpg';
 
 import song from './audio/Youre Gonna Live Forever in Me.mp3';
 

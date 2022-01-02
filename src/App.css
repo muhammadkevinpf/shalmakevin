@@ -54,7 +54,7 @@ a:hover {
 
 .hero {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./assets/image/hero.JPG);
+    url(./assets/image/hero.jpg);
   background-size: cover;
   background-position: center;
   min-height: 60vh;
@@ -113,7 +113,7 @@ a:hover {
 
 .modal-background {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./assets/image/test.JPG);
+    url('./assets/image/gallery/gallery (3).jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
