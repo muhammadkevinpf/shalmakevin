@@ -18,9 +18,18 @@ import gallery8 from './image/gallery/gallery (8).jpg';
 import gallery9 from './image/gallery/gallery (9).jpg';
 import gallery10 from './image/gallery/gallery (10).jpg';
 
+import generous_person from './image/character/generous_person.png';
+import super_generous from './image/character/super_generous_person.png';
+import our_hero from './image/character/our_hero.png';
+import misterious_person from './image/character/misterious_person.png';
+
 import song from './audio/Youre Gonna Live Forever in Me.mp3';
 
 export {
+  generous_person,
+  super_generous,
+  our_hero,
+  misterious_person,
   cewe,
   cowo,
   ceremony,

@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-loading-skeleton/dist/skeleton.css'
+import 'react-loading-skeleton/dist/skeleton.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Navigation from './module/Nav';
 import About from './module/About';
@@ -13,6 +14,7 @@ import { song } from './assets';
 import ReactHowler from 'react-howler';
 import Modals from './components/Modals';
 import Galeri from './module/Galeri';
+import Payment from './module/Payment';
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
       <CountdownTimer />
       <Place />
       <GuestBook />
+      <Payment />
       <Footer />
       <Modals />
       <ReactHowler src={song} playing={true} />

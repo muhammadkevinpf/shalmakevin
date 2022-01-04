@@ -8,7 +8,7 @@ import TimelineItem from '../components/TimelineItem';
 function Timeline() {
   const timelineData = [
     {
-      title: 'How We Meet',
+      title: 'How We Met',
       image:
         'https://www.osceolaschools.net/cms/lib/FL50000609/Centricity/Shared/Images/EagerStudents.jpg',
       date: 'Bandung, 2006',
@@ -16,7 +16,7 @@ function Timeline() {
         'Our first met was in elementary school. At that time, Kevin was a transfer student in the 3th grade of elementary school and he sat at the same table with Shalma. From there, we often joked and liked each other like elementary school children.',
     },
     {
-      title: 'How We Meet (Again)',
+      title: 'How We Met (Again)',
       image: first_date,
       date: 'Bandung, 2016',
       description:
@@ -55,6 +55,7 @@ function Timeline() {
             title={item.title}
             date={item.date}
             description={item.description}
+            key={index}
           />
         ))}
       </VerticalTimeline>

@@ -53,6 +53,7 @@ function GuestBook() {
           <Pagination.Item
             active={currentPage === i + 1 ? true : false}
             onClick={() => onPaginationClick(i + 1)}
+            key={i}
           >
             {i + 1}
           </Pagination.Item>

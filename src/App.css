@@ -6,6 +6,18 @@
   --gray: #a6a6a6;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -160,6 +172,40 @@ a:hover {
   border-color: #6c757d;
 }
 
+.payment-desc {
+  width: 100%;
+}
+
+.payment-box {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  min-width: 80%;
+  padding: 15px 25px;
+}
+
+.payment-image {
+  width: 100%;
+  height: 300px;
+}
+
+.square-border {
+  border-radius: 0;
+}
+
+.payment-text {
+  padding: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  border-bottom: 2px solid var(--gray)
+}
+
+.payment-text:focus {
+  box-shadow: none;
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     height: 100vh;
@@ -192,7 +238,17 @@ a:hover {
     padding: 2em;
   }
 
-  /* .about-container {
-    margin-top: -80px;
-  } */
+  .payment-desc {
+    width: 50%;
+  }
+
+  .payment-image {
+    width: 75%;
+    height: 65%;
+  }
+
+  .payment-box {
+    min-width: 20%;
+    max-width: 25%;
+  }
 }

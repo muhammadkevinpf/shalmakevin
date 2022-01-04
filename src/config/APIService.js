@@ -38,5 +38,23 @@ export function APIService() {
     });
   };
 
-  return { getUserComments, addUserComments };
+  const getPaymentLink = (itemName, amount) => {
+    console.log(itemName, amount);
+    return new Promise((resolve, reject) => {
+      axios('https://shalmakevin-wedding.herokuapp.com/pay', {
+        method: 'post',
+        data: { item_name: itemName, amount: parseInt(amount) },
+        timeout,
+      }).then(
+        (result) => {
+          resolve(result.data);
+        },
+        (error) => {
+          reject(error);
+        }
+      );
+    });
+  };
+
+  return { getUserComments, addUserComments, getPaymentLink };
 }
