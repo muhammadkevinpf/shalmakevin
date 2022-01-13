@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
 import { Container } from 'react-bootstrap';
 import { photos } from '../config/photos';
 
@@ -20,7 +19,7 @@ function Galeri() {
   };
   return (
     <Container fluid>
-      <Gallery photos={photos} onClick={openLightbox} margin={4} />
+      <Gallery photos={photos} onClick={openLightbox} margin={4} className="cursor-pointer"/>
       {isOpen && (
         <Lightbox
           mainSrc={photos[currentImage].src}

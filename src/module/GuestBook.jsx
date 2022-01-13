@@ -7,6 +7,7 @@ import {
   Button,
   Pagination,
   Modal,
+  Spinner,
 } from 'react-bootstrap';
 import { APIService } from '../config/APIService';
 import moment from 'moment';
@@ -17,6 +18,7 @@ function GuestBook() {
   const [userComments, setUserComments] = useState([]);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [loadingSubmit, setLoadingSubmit] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPage, setTotalPage] = useState(0);
   const [textData, setTextData] = useState({ name: '', message: '' });
@@ -81,6 +83,7 @@ function GuestBook() {
   const resetTextData = () => setTextData({ name: '', message: '' });
 
   const onFormSubmitted = (e) => {
+    setLoadingSubmit(true);
     addUserComments(textData.name, textData.message).then((res) => {
       let newTextData = { ...textData, createdDate: today };
       if (userComments.length === 5) {
@@ -90,6 +93,7 @@ function GuestBook() {
       }
       setModalOpen();
       resetTextData();
+      setLoadingSubmit(false);
     });
     e.preventDefault();
   };
@@ -149,8 +153,8 @@ function GuestBook() {
                   required
                 />
               </Form.Group>
-              <Button variant="secondary" type="submit" className="w-100">
-                Send
+              <Button variant="secondary" type="submit" className="w-100" disabled={loadingSubmit}>
+                {loadingSubmit ? <Spinner animation="border" /> : 'Send'}
               </Button>
             </Form>
           </Col>

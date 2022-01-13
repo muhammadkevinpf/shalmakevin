@@ -12,6 +12,7 @@ import {
 
 function Payment() {
   const [amount, setAmount] = useState('');
+  const [loading, setLoading] = useState(false);
   const { getPaymentLink } = APIService();
 
   const arrCharacter = [
@@ -31,23 +32,30 @@ function Payment() {
       image: our_hero,
       title: 'Our Hero',
       amount: 'Rp. 1.000.000',
-      value: 100000,
+      value: 1000000,
     },
   ];
 
   const onButtonClicked = (name, value) => {
+    setLoading(true);
     if (!value) {
       toast.error('Please insert amount first');
+      setLoading(false);
       return;
     }
 
     if (value < 5000) {
       toast.error('Your amount is below minimum. Please insert min Rp. 5.000');
+      setLoading(false);
       return;
     }
 
+    toast.success("Thank you! we'll redirecting you to payment page.");
+
     getPaymentLink(name, value).then((res) => {
-        window.open(res.redirect_url, '_blank')
+      setLoading(false);
+      window.open(res.redirect_url, '_blank');
+      setAmount('');
     });
   };
 
@@ -71,6 +79,7 @@ function Payment() {
                 src={item.image}
                 alt={item.title}
                 className="payment-image mb-2"
+                id={index === 2 && 'our-hero'}
               />
               <p className="mb-1 fw-bold font-playfair payment-title">
                 {item.title}
@@ -81,6 +90,7 @@ function Payment() {
               <Button
                 variant="outline-secondary"
                 onClick={() => onButtonClicked(item.title, item.value)}
+                disabled={loading}
               >
                 Choose
               </Button>
@@ -109,6 +119,7 @@ function Payment() {
               onClick={() =>
                 onButtonClicked('Misterious Generous Person', amount)
               }
+              disabled={loading}
             >
               Choose
             </Button>
