@@ -25,7 +25,7 @@ import super_generous from './image/character/super_generous_person.png';
 import our_hero from './image/character/our_hero.png';
 import misterious_person from './image/character/misterious_person.png';
 
-import song from './audio/Youre Gonna Live Forever in Me.mp3';
+import song from './audio/Song.mp3';
 
 export {
   generous_person,
