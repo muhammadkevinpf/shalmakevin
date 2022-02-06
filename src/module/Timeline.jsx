@@ -21,13 +21,13 @@ function Timeline() {
       description:
         'After graduating from elementary school on 2009, we lost contact for almost 7 years and we started to meet again on the elementary school reunion. Long story short, it turns out that Kevin still have a crush on Shalma. From that day, Kevin ask her to go on a date.',
     },
-    {
-      title: 'First Date',
-      image: first_date,
-      date: 'Bandung, 2016',
-      description:
-        "Our first date was going to the mall, we spend our time chit-chat like 'a lost buddy' that had never seen each other in a long time. We flashback on our Elementary School life, and we ask each other why we never see each other even our High School is in the same neighborhood. Maybe it's some God plans that we met again after 7 years. lol",
-    },
+    // {
+    //   title: 'First Date',
+    //   image: first_date,
+    //   date: 'Bandung, 2016',
+    //   description:
+    //     "Our first date was going to the mall, we spend our time chit-chat like 'a lost buddy' that had never seen each other in a long time. We flashback on our Elementary School life, and we ask each other why we never see each other even our High School is in the same neighborhood. Maybe it's some God plans that we met again after 7 years. lol",
+    // },
     {
       title: 'Engagement',
       image: engagement,
