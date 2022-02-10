@@ -2,7 +2,7 @@ import cewe from './image/shalma.jpg';
 import cowo from './image/kevin.jpg';
 import ceremony from './image/ceremony.jpg';
 import reception from './image/reception.jpg';
-import first_date from './image/first_date.jpeg';
+import first_date from './image/first_date.jpg';
 import engagement from './image/engagement.jpeg';
 import wedding from './image/wedding.jpeg';
 import meet_again from './image/meet_again.jpeg';
